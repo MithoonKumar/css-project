@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.box {
+  //flex: 1 0 200px;
+  flex-grow: 1;
+  flex-basis: 200px;
+}
+
+.box-1 {
+  height: 100px;
+  background-color: green;
+}
+
+.box-2 {
+  height: 100px;
+  background-color: white;
+}
+
+.box-3 {
+  height: 100px;
+  background-color: gray;
+}
+
+.box-4 {
+  height: 100px;
+  background-color: pink;
+}
