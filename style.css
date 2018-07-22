@@ -1,36 +1,33 @@
 body {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
-.wrapper {
-  background-color: yellow;
-  display: flex;
-  flex-wrap: wrap-reverse;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  background-color: #555;
 }
 
-.box {
-  //flex: 1 0 200px;
-  flex-grow: 1;
-  flex-basis: 200px;
+li {
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
 }
 
-.box-1 {
-  height: 100px;
-  background-color: green;
-}
-
-.box-2 {
-  height: 100px;
-  background-color: white;
-}
-
-.box-3 {
-  height: 100px;
+li:hover {
   background-color: gray;
 }
 
-.box-4 {
-  height: 100px;
-  background-color: pink;
+@media screen and (min-width: 700px) {
+  li {
+    flex-grow: 1;
+    flex-basis: 0px;
+    text-align: center;
+  }
+  ul {
+    display: flex;
+  }
 }
